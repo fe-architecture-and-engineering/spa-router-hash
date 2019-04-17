@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": ["es5", "es6", "dom"],
+    "module": "esnext",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "preserveConstEnums": false,
+    "listEmittedFiles": true,
+    "noUnusedLocals": false,
+    "target": "es5",
+    "moduleResolution": "node",
+    "rootDirs": [
+      "src"
+    ]
+  },
+  "include": [
+    "src/index.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

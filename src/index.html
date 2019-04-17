@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SPA Router Hash</title>
+  <style>
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: 100%;
+    }
+    li{
+      flex: 1;
+      height: 40px;
+      line-height: 40px;
+      border: solid green 1px;
+      text-align: center;
+      cursor: pointer;
+    }
+    li.current,li:hover{
+      background: green;
+      color: white;
+    }
+    #back{
+      border: solid red 1px;
+      background: red;
+      color: white;
+    }
+    #router-view{
+      max-width: 600px;
+      margin: 20px auto;
+      min-height: 400px;
+      border: solid 1px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    #router-view__head{
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    #router-view__body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li id="home">Home</li>
+    <li id="u-joe">User:Joe</li>
+    <li id="u-sunny">User:Sunny</li>
+    <li id="back">后退</li>
+  </ul>
+  <section id="router-view">
+    <div id="router-view__head">
+      <label>当前路径:</label>
+      <span id="router-view__path"></span>
+    </div>
+    <div id="router-view__body">Hello</div>
+  </section>
+</body>
+</html>
